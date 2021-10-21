@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin: 0 3rem;
+}
+header {
+  padding: 1rem 0;
+  background-color: #041e3a;
+  margin: 0 3rem;
+}
+.nav-link {
+  color: #041e3a;
+}
+header h1 {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  word-spacing: 0.25rem;
+  letter-spacing: 0.15rem;
+}
+.menu_container {
+  min-height: 80vh;
+  background-color: #f8f9fa;
+}
+footer {
+  background-color: #041e3a;
+  margin: 0 3rem;
+}
+footer p {
+  text-align: center;
+  padding: 1.25rem 0;
+  color: white;
+  font-size: 1rem;
+}
+.navbar-nav {
+  width: 100%;
+}
+.nav-item {
+  width: 100%;
+}
+.active {
+  background-color: #041e3a;
+  padding-left: 10px;
+}
+.active a {
+  color: white;
+  text-decoration: none;
+}
+.pop_up_container,
+.pop_up_container_delete {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: transparent;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.pop_up {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30vw;
+  height: auto;
+  background-color: #041e3a;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  animation-name: slide_down;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.pop_up_delete {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15vw;
+  height: auto;
+  background-color: #041e3a;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  animation-name: slide_down;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.parent-row .col-sm-3:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+i {
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+@keyframes slide_down {
+  from {
+    top: -20%;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes slide_up {
+  from {
+    top: 0;
+  }
+  to {
+    top: -20%;
+  }
+}
+.row {
+  width: 100%;
+  padding: 0.25rem 1rem;
+  margin: 0;
+}
+.row-subcategories {
+  background-color: #454d55;
+  color: white;
+}

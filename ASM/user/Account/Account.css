@@ -1,0 +1,902 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*-------------------------------------*/
+/*   Header   */
+/*-------------------------------------*/
+.header-intro {
+  max-width: 100vw;
+  height: 19px;
+  background-color: #041e3a;
+  display: flex;
+  padding-right: 5%;
+  justify-content: flex-end;
+}
+.utility-nav {
+  color: white;
+  display: flex;
+}
+i {
+  font-size: small;
+}
+.utility-nav span {
+  font-size: 0.7rem;
+  margin-left: 10px;
+}
+.utility-nav div:nth-child(1) {
+  margin-right: 20px;
+}
+.banner-slider {
+  max-width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.menu {
+  width: 100%;
+  padding: 0.9375rem 3.4375rem;
+  min-height: 4.4375rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: auto;
+  z-index: 1;
+  transition: background-color 0.5s;
+}
+.menu-mobile {
+  display: none;
+}
+.menu-mobile ul a {
+  text-decoration: none;
+}
+.header-icon-mobile {
+  display: flex;
+}
+.header-icon-mobile i {
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.menu .menu-category ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  margin-right: 10rem;
+}
+.menu .menu-category ul li {
+  color: rgb(0, 0, 0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+.menu .menu-category ul a {
+  text-decoration: none;
+  color: #041e3a;
+}
+.menu .menu-category ul li a {
+  font-size: 0.75rem;
+}
+.menu .menu-category ul span a {
+  font-size: 1.75rem;
+  color: rgb(0, 0, 0);
+}
+.menu .menu-category ul span {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+.header-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header-icon div {
+  padding: 0 15px;
+}
+.header-icon div i {
+  color: #041e3a;
+  cursor: pointer;
+  font-size: larger;
+}
+.toggle_nav {
+  position: absolute;
+  z-index: 1000;
+  color: white;
+  padding: 1rem;
+  display: none;
+}
+.toggle_nav i {
+  position: absolute;
+  z-index: 1000;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+/*-------------------------------------*/
+/* End Header   */
+/*-------------------------------------*/
+/*-------------------------------------*/
+/* Account    */
+/*-------------------------------------*/
+
+/*-------------------------------------*/
+/* secondary    */
+/*-------------------------------------*/
+#secondary a,
+.help-item {
+  text-decoration: none;
+  color: #041e3a;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.93px;
+}
+#secondary h3,
+.account-help h3 {
+  color: #041e3a;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.875rem;
+  font-family: Founders Grotesk Text Medium, Helvetica, Arial, sans-serif;
+  font-style: Normal;
+  font-weight: 500;
+}
+.help-item > p,
+.contact > p {
+  display: flex;
+  align-items: center;
+}
+.account-help > p {
+  margin: 1em 0 2em 0;
+}
+.phone-detail {
+  margin: 2em 0 2em 20%;
+  line-height: 160%;
+  font-family: Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+}
+.help-item {
+  margin-bottom: 2em;
+}
+.help-item > p > a,
+.contact > p > a {
+  margin-left: 10%;
+}
+#sms a {
+  color: #252525;
+  text-decoration: underline;
+  margin-left: 20%;
+}
+
+/*-------------------------------------*/
+/*End secondary    */
+/*-------------------------------------*/
+/*-------------------------------------*/
+/*  Primary    */
+/*-------------------------------------*/
+.input_element:focus {
+  outline: none;
+}
+#container-wrap {
+  display: flex;
+  margin-top: 3em;
+}
+#secondary {
+  width: 25%;
+  padding-left: 4%;
+  padding-right: 5%;
+}
+#primary {
+  flex: 1;
+  display: flex;
+}
+#primary .account-login {
+  width: 50%;
+  border: 1px solid grey;
+}
+#primary .col2-container {
+  width: 50%;
+}
+#primary .tab {
+  display: flex;
+}
+#primary .tab button {
+  flex: 1;
+  color: #041e3a;
+  background-color: rgb(239, 239, 239);
+  font-size: 2vw;
+  padding: 2vw;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+.social-login-mobile {
+  display: none;
+}
+
+.social-login button {
+  width: 48%;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: transparent;
+  border: 1px solid black;
+  transition: background-color 0.5s;
+}
+.social-login button:hover {
+  background-color: #041e3a;
+  color: white;
+}
+.social-login button span {
+  margin-left: 1em;
+}
+.social-login button svg {
+  width: 1.5rem;
+}
+#primary #line {
+  height: 1px;
+  background-color: grey;
+  margin: 1em 2em;
+  position: relative;
+}
+#primary #line::after {
+  content: "or";
+  display: block;
+  color: #757575;
+  position: absolute;
+  background-color: white;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  font-family: Founders Grotesk Mono Light, Lucida Console, Arial, Helvetica,
+    sans-serif;
+}
+/*------------  Login panel ------------*/
+#login-panel form,
+#createlogin-panel form,
+.social-login-mobile {
+  padding: 1em 2em;
+}
+
+#login-panel form input[type="text"],
+#login-panel form input[type="password"],
+#login-panel form input[type="email"],
+#createlogin-panel form input[type="text"],
+#createlogin-panel form input[type="password"],
+#createlogin-panel form input[type="email"],
+#primary .col2-container form input[type="email"],
+#primary .col2-container form input[type="text"] {
+  width: 100%;
+  padding: 1.25em 0.8em;
+  border: none;
+  border: 1px solid grey;
+}
+#login-panel form input:focus,
+#primary .col2-container form input:focus {
+  outline: none;
+}
+#login-panel form input[type="text"]:focus ~ span,
+#login-panel form input[type="password"]:focus ~ span,
+#login-panel form input[type="email"]:focus ~ span,
+#createlogin-panel form input[type="text"]:focus ~ span,
+#createlogin-panel form input[type="password"]:focus ~ span,
+#createlogin-panel form input[type="email"]:focus ~ span,
+#primary .col2-container form input[type="text"]:focus ~ span,
+#primary .col2-container form input[type="email"]:focus ~ span {
+  top: 20%;
+  font-size: 0.65em;
+}
+#login-panel .login-control,
+#createlogin-panel .create-login-control {
+  margin-top: 1em;
+  position: relative;
+}
+#login-panel .login-control:first-child,
+#createlogin-panel .create-login-control:first-child {
+  margin-top: 0;
+  position: relative;
+}
+#login-panel .login-control > span,
+#createlogin-panel .create-login-control > span,
+#primary .col2-container form .order-track-input span {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+  color: #757575;
+  font-family: Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+  font-size: 0.75em;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+#login-panel .forgot {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5em 0;
+}
+#login-panel .remember,
+#createlogin-panel .remember {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  font-family: Founders Grotesk Mono Light, Lucida Console, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.75em;
+}
+#login-panel .remember input[type="checkbox"],
+#createlogin-panel .remember input[type="checkbox"],
+#createlogin-panel .subscribe input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+#login-panel .remember label,
+#createlogin-panel .remember label {
+  flex: 1;
+  justify-content: flex-start;
+  color: #041e3a;
+}
+#login-panel .remember label ~ span,
+#createlogin-panel .remember input[type="checkbox"] {
+  color: #041e3a;
+  cursor: pointer;
+}
+#login-panel .btn-sign-in,
+#createlogin-panel .btn-create-account {
+  margin: 1.25em 0 2em 0;
+  display: flex;
+}
+#login-panel .btn-sign-in button,
+#createlogin-panel .btn-create-account button {
+  background-color: #041e3a;
+  flex: 1;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 1.5em 0;
+}
+#login-panel .forgot a {
+  text-decoration: underline;
+  color: #949494;
+  font-size: 0.75em;
+  font-family: Founders Grotesk Mono Light, Lucida Console, Arial, Helvetica,
+    sans-serif;
+}
+.forgot span {
+  color: #949494;
+  font-size: 0.75em;
+  font-family: Founders Grotesk Mono Light, Lucida Console, Arial, Helvetica,
+    sans-serif;
+}
+#login-panel .remember input[type="checkbox"],
+#createlogin-panel .remember input[type="checkbox"] {
+  margin-right: 1em;
+  border: initial;
+}
+/*----------End  Login panel -----------*/
+/*----------   order track   -----------*/
+#primary .order-track {
+  padding: 2em 3em;
+  margin: 0 3.5em;
+  background-color: #f2f3f5;
+}
+#primary .order-track h3 {
+  color: #041e3a;
+  letter-spacing: 0.1rem;
+  font-size: 0.875rem;
+  font-family: Founders Grotesk Text Medium, Helvetica, Arial, sans-serif;
+  font-style: Normal;
+  font-weight: 500;
+  text-align: center;
+}
+#primary .col2-container .order-track p {
+  color: #041e3a;
+  font-size: 0.75rem;
+  width: 70%;
+  margin: 0 auto 10px;
+  font-family: Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin: 1em auto;
+  font-family: Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+  line-height: 2em;
+}
+.order-track-input {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+#primary .col2-container button {
+  background-color: transparent;
+  border: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0 0 0.25rem;
+  color: #041e3a;
+  width: auto;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+#primary .col2-container button:hover::after {
+  top: 90%;
+}
+#primary .col2-container button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #041e3a;
+  top: 125%;
+  left: 0;
+  transition: top 0.3s;
+}
+#primary #createlogin-panel .subscribe {
+  display: flex;
+  margin-top: 0.75em;
+  align-items: flex-start;
+}
+#primary #createlogin-panel .subscribe input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin-right: 1em;
+}
+#primary #createlogin-panel .subscribe label {
+  font-family: Founders Grotesk Mono Light, Lucida Console, Arial, Helvetica,
+    sans-serif;
+  flex: 1;
+  font-size: 0.75em;
+  color: #474747;
+}
+#createlogin-panel .policy {
+  margin-left: 1.75em;
+  margin-top: 1em;
+}
+#createlogin-panel .policy a {
+  text-decoration: underline;
+  color: #041e3a;
+  font-size: 0.75rem;
+  font-family: Founders Grotesk Mono Light, Lucida Console, Arial, Helvetica,
+    sans-serif;
+}
+/*----------end   order track  ---------*/
+/*-------------- benefits --------------*/
+#primary .benefits {
+  margin: 0 3.5em;
+}
+#primary .benefits h2 {
+  color: #041e3a;
+  font-size: 0.75rem;
+  font-family: Founders Grotesk Text Medium, Helvetica, Arial, sans-serif;
+}
+#primary .benefits h3 {
+  color: #041e3a;
+  font-family: Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+  font-size: 0.75em;
+  margin: 1.5em 0;
+}
+#primary .benefits p {
+  font-size: 0.875rem;
+  color: #767676;
+  letter-spacing: 0.0125rem;
+}
+#primary .security {
+  margin-top: 1.25em;
+}
+#primary .security a {
+  text-decoration: none;
+  color: #474747;
+  letter-spacing: 0.01875rem;
+  font-size: 0.875rem;
+}
+#primary .security a:hover {
+  text-decoration: underline;
+  color: #041e3a;
+}
+/*----------- end benefits -------------*/
+/*-------------------------------------*/
+/*End Primary    */
+/*-------------------------------------*/
+/*-------------------------------------*/
+/* End Account    */
+/*-------------------------------------*/
+/*-------------------------------------*/
+/* Footer  */
+/*-------------------------------------*/
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 3%;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-top: 4vw;
+}
+.footer-container section {
+  border-right: 1px solid gray;
+}
+.footer-container section ul {
+  list-style-type: none;
+}
+.footer-container section ul li {
+  margin: 5% 0;
+  font-size: small;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer-container section ul li a {
+  text-decoration: none;
+  color: black;
+}
+.footer:nth-child(2),
+.footer:nth-child(3),
+.footer:nth-child(4) {
+  padding-left: 10%;
+}
+.footer h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  font-weight: normal;
+}
+#email_input {
+  display: flex;
+  margin-top: 1vw;
+  margin-bottom: 1.5vw;
+  border: 1px solid gray;
+}
+#email_input .input-email {
+  flex: 1;
+}
+#email_input .input-email input {
+  width: 100%;
+  padding: 1vw 0.5vw;
+  border: none;
+}
+#email_input .input-email input:focus {
+  outline: none;
+}
+#email_input div:nth-child(2) button {
+  height: 100%;
+  font-size: 0.7vw;
+  padding: 0 0.5vw;
+  background-color: #041e3a;
+  color: white;
+  border: none;
+}
+.footer:nth-child(4) div button:focus {
+  outline: none;
+}
+.footer:nth-child(4) p a {
+  color: rgb(100, 98, 98);
+}
+.language span {
+  color: #041e3a;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  margin-right: 5%;
+}
+.language a {
+  text-decoration: none;
+  font-size: small;
+}
+.language {
+  margin-top: 5%;
+}
+.icons {
+  padding: 2% 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.icons i {
+  font-size: 150%;
+  color: #041e3a;
+}
+.copyright {
+  padding: 2%;
+  text-align: center;
+  border-top: 1px solid grey;
+  font-size: 0.8rem;
+}
+footer span.mobile {
+  display: none;
+}
+.mobile {
+  display: none;
+}
+/*-------------------------------------*/
+/* End Footer   */
+/*-------------------------------------*/
+
+@media only screen and (max-width: 1000px) {
+  /*------------ menu ------------*/
+  .toggle_nav {
+    position: fixed;
+    background-color: white;
+    top: 1vw;
+    left: 1vw;
+    width: fit-content;
+    height: auto;
+    padding: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .toggle_nav i {
+    color: #041e3a;
+    font-size: 4vw;
+  }
+  .menu {
+    display: none;
+  }
+  .menu-mobile {
+    width: 25rem;
+    padding: 0.9375rem 3.4375rem;
+    height: 90vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    padding-top: 4rem;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    left: -100%;
+    background-color: #041e3a;
+    transition: left 0.5s;
+  }
+  .menu-mobile .menu-category-mobile ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-mobile .menu-category-mobile ul li a {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+  }
+  .menu-mobile .menu-category-mobile ul span a {
+    font-size: 2rem;
+    color: white;
+  }
+  .menu-mobile .menu-category-mobile ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-mobile .menu-category-mobile ul li {
+    padding: 2rem 0;
+  }
+  /*------------ menu ------------*/
+  /*------------ main ------------*/
+  .account-help {
+    display: none;
+  }
+  .account-help.mobile {
+    width: 30%;
+    margin: 2rem auto;
+    border-bottom: none;
+  }
+  #container-wrap {
+    display: block;
+    margin-top: 3em;
+  }
+  #primary {
+    display: block;
+  }
+  #primary .account-login {
+    width: 100%;
+    border: none;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+  #primary .col2-container {
+    width: 100%;
+  }
+  /*--------- social mobile --------*/
+  #primary .tab button {
+    font-size: 1rem;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .social-login {
+    display: none;
+  }
+  .social-login-mobile {
+    display: block;
+  }
+  #mobile-mode {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .social-login-mobile button {
+    display: flex;
+    width: 100%;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  .social-login-mobile button:hover {
+    background-color: #041e3a;
+    color: white;
+  }
+  .social-login-mobile button span {
+    margin-left: 0.75rem;
+  }
+  .social-login-mobile {
+    display: block;
+  }
+  /*--------- social mobile --------*/
+  #primary .order-track {
+    margin: 2.5rem 0;
+  }
+  #primary .benefits {
+    margin: 3rem 2rem;
+  }
+  /*------------ main ------------*/
+
+  /*-------- footer -----------*/
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 3%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: 4vw;
+  }
+  .footer-container .footer:nth-child(4) {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    padding: 3vw 0;
+    border-bottom: 1px solid grey;
+  }
+  .mobile h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: normal;
+  }
+  .mobile a {
+    color: rgb(100, 98, 98);
+    text-decoration: none;
+  }
+  .mobile #email_input .submit button {
+    padding: 0 8vw;
+    font-size: 2vw;
+  }
+  .icons {
+    padding: 2% 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-container .footer:nth-child(3) {
+    border-right: none;
+  }
+  .footer-container .footer {
+    text-align: center;
+  }
+  /*-------- footer -----------*/
+}
+
+@media only screen and (max-width: 600px) {
+  /*--------- main -----------*/
+  .imagery_row {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 5%;
+  }
+  main .container .option {
+    padding: 10% 5%;
+  }
+  .tabs {
+    padding: 0 5%;
+  }
+  #details {
+    padding: 0;
+    margin-left: 1rem;
+  }
+  #details_row {
+    column-gap: 1rem;
+  }
+  #details_row .detail_column {
+    padding: 0 5%;
+  }
+  #more .more_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 2rem;
+  }
+  #more {
+    margin-top: 5rem;
+    padding: 0 7%;
+  }
+  .account-help.mobile {
+    width: 40%;
+    margin: 2rem auto;
+    border-bottom: none;
+    text-align: center;
+  }
+  /*--------- main -----------*/
+  /*--------- footer ---------*/
+
+  .footer-container .footer > ul {
+    display: block;
+    text-align: left;
+    overflow: hidden;
+    transition: height 0.5s;
+  }
+
+  .footer-container .mobile {
+    display: block;
+    cursor: pointer;
+    border-bottom: none;
+  }
+  footer .mobile {
+    padding: 2vw 3vw;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .footer-container .footer > h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer:nth-child(2),
+  .footer:nth-child(3),
+  .footer:nth-child(4) {
+    padding-left: 0%;
+  }
+  .footer-container section {
+    border-right: none;
+  }
+  .right {
+    padding: 5%;
+  }
+  /*--------- footer ---------*/
+}
+.error,
+.error_confirm {
+  color: red;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.75rem;
+  padding: 0.25rem 0;
+}
+.loader-account {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #d0d8e0;
+  border-top: 2px solid #000000;
+  animation: spin 0.5s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.effect-account {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

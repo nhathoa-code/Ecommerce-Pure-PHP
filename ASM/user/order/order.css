@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/*------------ Header -----------*/
+#head {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#head a {
+  font-weight: 400;
+  font-size: 3rem;
+  color: #041e3a;
+  text-decoration: none;
+}
+/*------------ Header -----------*/
+/*------------- Main ------------*/
+
+main .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  min-height: 500px;
+  margin-top: 5vw;
+  padding: 0 5rem;
+}
+
+/*-------------- form ------------------*/
+#filling-form-container {
+  width: 80%;
+}
+#filling-form-container form {
+  padding: 0 2em;
+}
+
+#filling-form-container form input[type="text"],
+#filling-form-container form input[type="password"],
+#filling-form-container form input[type="email"] {
+  width: 100%;
+  padding: 1.25em 0.8em;
+  border: none;
+  border: 1px solid grey;
+}
+.input_element:focus {
+  outline: none;
+}
+
+#filling-form-container form input[type="text"]:focus ~ span,
+#filling-form-container form input[type="email"]:focus ~ span {
+  top: 20%;
+  font-size: 0.65em;
+}
+
+#filling-form-container .filling-control {
+  margin-top: 1em;
+  position: relative;
+}
+
+#filling-form-container .filling-control:first-child {
+  margin-top: 0;
+  position: relative;
+}
+
+#filling-form-container .filling-control > span {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+  color: #757575;
+  font-family: Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+  font-size: 0.75em;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+#filling-form-container .btn-submit {
+  margin: 1.25em 0 2em 0;
+  display: flex;
+}
+
+#filling-form-container .btn-submit button {
+  background-color: #041e3a;
+  flex: 1;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 1.5em 0;
+}
+#select_method {
+  padding: 1.25em 0.8em;
+  width: 50%;
+}
+#select_method:focus {
+  border: none;
+}
+.error {
+  color: red;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.75rem;
+  padding: 0.25rem 0;
+}
+/*-------------- form ------------------*/
+/*------------ total_infos -------------*/
+
+.total_info .cart_total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  color: #041e3a;
+  margin-bottom: 1.5rem;
+}
+/* ----------- bag -----------*/
+/* .bag_items {
+  color: #474747;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  margin-top: 1.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #d1d1d1;
+} */
+.items_container {
+  height: 500px;
+  /* overflow-y: scroll; */
+}
+.item {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.item_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item_image img {
+  width: 6.5rem;
+  height: auto;
+}
+/* ----------- bag -----------*/
+/* ----------- product -----------*/
+#order_details {
+  color: #474747;
+  font-weight: 400;
+  margin: 1rem 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc8c8;
+}
+.item_info p {
+  margin: 0.5rem 0;
+}
+.brand_name {
+  color: #041e3a;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.product_name {
+  font-size: 1rem;
+  color: #041e3a;
+}
+.product_color,
+.product_size,
+.product_price {
+  color: #474747;
+  font-size: 0.8rem;
+}
+.product_total {
+  text-align: right;
+  color: #041e3a;
+}
+
+/* ----------- product -----------*/
+.proceed {
+  text-align: center;
+}
+.proceed button {
+  background-color: #041e3a;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 1.25rem 0;
+  cursor: pointer;
+  word-spacing: 0.25rem;
+  transition: background-color 0.5s;
+}
+.bag {
+  width: 25%;
+}
+.proceed button:hover {
+  background-color: #082c53;
+}
+.find_in_store {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+/*------------ Options -------------*/
+
+/* ------------- main ----------*/
+main .container .shopping_bag {
+  height: auto;
+  width: 100%;
+}
+main .container .option {
+  height: auto;
+  width: 100%;
+  position: static;
+  left: 0;
+  top: 0;
+  padding-right: 0;
+  padding: 10% 15%;
+}
+/* ------------- main ----------*/
+.style {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 1rem;
+}

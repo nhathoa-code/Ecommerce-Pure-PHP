@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.error {
+  color: red;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.75rem;
+  padding: 0.25rem 0;
+}
+/*------------ Header -----------*/
+.header-intro {
+  max-width: 100vw;
+  height: 19px;
+  background-color: #041e3a;
+  display: flex;
+  padding-right: 5%;
+  justify-content: flex-end;
+}
+
+.utility-nav {
+  color: white;
+  display: flex;
+}
+
+i {
+  font-size: small;
+}
+
+.utility-nav span {
+  font-size: 0.7rem;
+  margin-left: 10px;
+}
+
+.utility-nav div:nth-child(1) {
+  margin-right: 20px;
+}
+
+.header-intro {
+  max-width: 100vw;
+  height: 19px;
+  background-color: #041e3a;
+  display: flex;
+  padding-right: 5%;
+  justify-content: flex-end;
+}
+
+.utility-nav {
+  color: white;
+  display: flex;
+}
+
+i {
+  font-size: small;
+}
+
+.utility-nav span {
+  font-size: 0.7rem;
+  margin-left: 10px;
+}
+
+.utility-nav div:nth-child(1) {
+  margin-right: 20px;
+}
+
+.menu {
+  width: 100%;
+  padding: 0.9375rem 3.4375rem;
+  min-height: 4.4375rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: auto;
+  z-index: 1;
+  transition: background-color 0.5s;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.menu-mobile ul a {
+  text-decoration: none;
+}
+
+.header-icon-mobile {
+  display: flex;
+}
+
+.header-icon-mobile i {
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.menu .menu-category ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  margin-right: 10rem;
+}
+
+.menu .menu-category ul li {
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+
+.menu .menu-category ul a {
+  text-decoration: none;
+  color: #041e3a;
+}
+
+.menu .menu-category ul li a {
+  font-size: 0.75rem;
+}
+
+.menu .menu-category ul span a {
+  font-size: 1.75rem;
+  color: rgb(0, 0, 0);
+}
+
+.menu .menu-category ul span {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+.header-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-icon div {
+  padding: 0 15px;
+}
+
+.header-icon div i {
+  color: #041e3a;
+  cursor: pointer;
+  font-size: larger;
+}
+
+.toggle_nav {
+  position: absolute;
+  z-index: 1000;
+  color: white;
+  padding: 1rem;
+  display: none;
+}
+
+.toggle_nav i {
+  position: absolute;
+  z-index: 1000;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/*------------ Header -----------*/
+/*------------ Main -------------*/
+
+#container > h1 {
+  padding: 1rem 0;
+  text-align: center;
+  color: #041e3a;
+  font-size: 3rem;
+  font-weight: 400;
+}
+#container > div > h3 {
+  padding: 1rem 0;
+  font-weight: 400;
+  font-size: 1.75rem;
+  color: #041e3a;
+}
+#container span {
+  font-size: 1.5rem;
+  color: black;
+}
+/*------------end Main -------------*/
+/*------------  Login panel ------------*/
+#createlogin-panel {
+  width: 760px;
+  margin: 0 auto;
+}
+#createlogin-panel form {
+  padding: 0;
+}
+input:focus {
+  outline: none;
+}
+textarea {
+  padding: 0.25rem 0.8rem;
+  width: 100%;
+}
+textarea:focus {
+  outline: none;
+}
+#createlogin-panel form input[type="text"],
+#createlogin-panel form input[type="password"],
+#createlogin-panel form input[type="email"] {
+  width: 100%;
+  padding: 1.25em 0.8em;
+  border: none;
+  border: 1px solid grey;
+}
+#login-panel form input:focus,
+#primary .col2-container form input:focus {
+  outline: none;
+}
+
+#createlogin-panel form input[type="text"]:focus ~ span,
+#createlogin-panel form input[type="password"]:focus ~ span,
+#createlogin-panel form input[type="email"]:focus ~ span {
+  top: 20%;
+  font-size: 0.65em;
+}
+
+#createlogin-panel .create-login-control {
+  margin-top: 1em;
+  position: relative;
+}
+
+#createlogin-panel .create-login-control:first-child {
+  margin-top: 0;
+  position: relative;
+}
+
+#createlogin-panel .create-login-control > span {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+  color: #757575;
+  font-family: Founders Grotesk text Regular, Helvetica, Arial, sans-serif;
+  font-size: 0.75em;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+#login-panel .forgot {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5em 0;
+}
+
+#createlogin-panel .remember {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  font-family: Founders Grotesk Mono Light, Lucida Console, Arial, Helvetica,
+    sans-serif;
+  font-size: 0.75em;
+}
+/* #login-panel .remember input[type="checkbox"],
+#createlogin-panel .remember input[type="checkbox"],
+#createlogin-panel .subscribe input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+} */
+
+#createlogin-panel .remember label {
+  flex: 1;
+  justify-content: flex-start;
+  color: #041e3a;
+}
+
+#createlogin-panel .remember input[type="checkbox"] {
+  color: #041e3a;
+  cursor: pointer;
+}
+
+#createlogin-panel .btn-create-account {
+  margin: 1.25em 0 2em 0;
+  display: flex;
+}
+#createlogin-panel .btn-create-account button {
+  background-color: #041e3a;
+  flex: 1;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 1.5em 0;
+}
+#login-panel .forgot a {
+  text-decoration: underline;
+  color: #949494;
+  font-size: 0.75em;
+  font-family: Founders Grotesk Mono Light, Lucida Console, Arial, Helvetica,
+    sans-serif;
+}
+.forgot span {
+  color: #949494;
+  font-size: 0.75em;
+  font-family: Founders Grotesk Mono Light, Lucida Console, Arial, Helvetica,
+    sans-serif;
+}
+
+#createlogin-panel .remember input[type="checkbox"] {
+  margin-right: 1em;
+  border: initial;
+}
+iframe {
+  width: 100%;
+  height: auto;
+}
+/*----------End  Login panel -----------*/
+/*-------------------------------------*/
+/* Footer  */
+/*-------------------------------------*/
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 3%;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-top: 4vw;
+}
+
+.footer-container section {
+  border-right: 1px solid gray;
+}
+
+.footer-container section ul {
+  list-style-type: none;
+}
+
+.footer-container section ul li {
+  margin: 5% 0;
+  font-size: small;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container section ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer:nth-child(2),
+.footer:nth-child(3),
+.footer:nth-child(4) {
+  padding-left: 10%;
+}
+
+.footer h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  font-weight: normal;
+}
+
+#email_input {
+  display: flex;
+  margin-top: 1vw;
+  margin-bottom: 1.5vw;
+  border: 1px solid gray;
+}
+
+#email_input .input-email {
+  flex: 1;
+}
+
+#email_input .input-email input {
+  width: 100%;
+  padding: 1vw 0.5vw;
+  border: none;
+}
+
+#email_input .input-email input:focus {
+  outline: none;
+}
+
+#email_input div:nth-child(2) button {
+  height: 100%;
+  font-size: 0.7vw;
+  padding: 0 0.5vw;
+  background-color: #041e3a;
+  color: white;
+  border: none;
+}
+
+.footer:nth-child(4) div button:focus {
+  outline: none;
+}
+
+.footer:nth-child(4) p a {
+  color: rgb(100, 98, 98);
+}
+
+.language span {
+  color: #041e3a;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  margin-right: 5%;
+}
+
+.language a {
+  text-decoration: none;
+  font-size: small;
+}
+
+.language {
+  margin-top: 5%;
+}
+
+.icons {
+  padding: 2% 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons i {
+  font-size: 150%;
+  color: #041e3a;
+}
+
+.copyright {
+  padding: 2%;
+  text-align: center;
+  border-top: 1px solid grey;
+  font-size: 0.8rem;
+}
+
+footer span.mobile {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+/*-------------------------------------*/
+/* End Footer   */
+/*-------------------------------------*/
